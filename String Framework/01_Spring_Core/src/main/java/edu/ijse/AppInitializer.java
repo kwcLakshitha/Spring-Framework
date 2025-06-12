@@ -15,20 +15,37 @@ public class AppInitializer {
         context.register(AppConfig.class);
         context.refresh();
 
+        // getBean( ) -> class
+        
         SpringBean springBean = context.getBean(SpringBean.class);
         springBean.text();
 
         System.out.println(springBean + "  springBean");
 
+        // getBean( ) -> class
+
         SpringBean Bean = context.getBean(SpringBean.class);
         System.out.println(Bean + "  bean");
+
+        // getBean( ) -> class
 
         TestBean1 testBean1 = context.getBean(TestBean1.class);
         System.out.println(testBean1 + "  testBean1");
 
-        TestBean2 testBean2 = context.getBean(TestBean2.class);
-        System.out.println(testBean2 + "  testBean2");
+        context.registerShutdownHook();
 
-        context.close();
+//        TestBean2 testBean2 = context.getBean(TestBean2.class);
+//        System.out.println(testBean2 + "  testBean2");
+
+        // getBean( ) -> id
+
+//        TestBean2 testBean2 = (TestBean2) context.getBean("testBean2");
+//        System.out.println(testBean2 + "  testBean2");
+
+
+        // getBean( ) -> id & class
+
+        TestBean2 testBean2 = (TestBean2) context.getBean(TestBean2.class ,"testBean2");
+        System.out.println(testBean2 + "  testBean2");
     }
 }
