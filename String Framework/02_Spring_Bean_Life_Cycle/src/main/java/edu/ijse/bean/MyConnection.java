@@ -16,28 +16,28 @@ public class MyConnection implements DisposableBean, BeanNameAware , BeanFactory
     // bean name aware - > bean ID
     @Override
     public void setBeanName(String name) {
-        System.out.println("MyConnection setBeanName" + name);
+        System.out.println("MyConnection setBeanName" );
     }
 
 
     // bean Factory aware
     @Override
     public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
-        System.out.println("MyConnection setBeanFactory" + beanFactory);
+        System.out.println("MyConnection setBeanFactory");
     }
 
 
     // bean context aware
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-        System.out.println("MyConnection setApplicationContext" + applicationContext);
+        System.out.println("MyConnection setApplicationContext");
     }
 
 
     // Bean Initialization
     @Override
     public void afterPropertiesSet() throws Exception {
-
+        System.out.println("MyConnection afterPropertiesSet");
     }
 
 
