@@ -1,5 +1,6 @@
 package edu.ijse;
 
+import edu.ijse.bean.MyConnection;
 import edu.ijse.bean.SpringBean;
 import edu.ijse.bean.TestBean1;
 import edu.ijse.bean.TestBean2;
@@ -16,7 +17,7 @@ public class AppInitializer {
         context.refresh();
 
         // getBean( ) -> class
-        
+
         SpringBean springBean = context.getBean(SpringBean.class);
         springBean.text();
 
@@ -32,7 +33,7 @@ public class AppInitializer {
         TestBean1 testBean1 = context.getBean(TestBean1.class);
         System.out.println(testBean1 + "  testBean1");
 
-        context.registerShutdownHook();
+
 
 //        TestBean2 testBean2 = context.getBean(TestBean2.class);
 //        System.out.println(testBean2 + "  testBean2");
@@ -47,5 +48,14 @@ public class AppInitializer {
 
         TestBean2 testBean2 = (TestBean2) context.getBean(TestBean2.class ,"testBean2");
         System.out.println(testBean2 + "  testBean2");
+
+
+        // bean method name eka use karanawa --> myConnection
+
+        MyConnection myConnection = (MyConnection) context.getBean("myConnection");
+        System.out.println(myConnection + "  myConnection");
+
+        context.registerShutdownHook();
+
     }
 }
