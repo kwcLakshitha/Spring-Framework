@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/03_DI_With_Spring/pom.xml" />
         <option value="$PROJECT_DIR$/04_FullModeVsLightMode/pom.xml" />
         <option value="$PROJECT_DIR$/05_Configuration/pom.xml" />
+        <option value="$PROJECT_DIR$/06_RunTimeValueInjection/pom.xml" />
       </list>
     </option>
   </component>
