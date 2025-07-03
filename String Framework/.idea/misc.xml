@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/06_RunTimeValueInjection/pom.xml" />
         <option value="$PROJECT_DIR$/07_SpringEnv/pom.xml" />
         <option value="$PROJECT_DIR$/08_Spring_Web_MVC/pom.xml" />
+        <option value="$PROJECT_DIR$/09_Rest_Controllers/pom.xml" />
       </list>
     </option>
   </component>
