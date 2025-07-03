@@ -10,6 +10,8 @@
         <option value="$PROJECT_DIR$/04_FullModeVsLightMode/pom.xml" />
         <option value="$PROJECT_DIR$/05_Configuration/pom.xml" />
         <option value="$PROJECT_DIR$/06_RunTimeValueInjection/pom.xml" />
+        <option value="$PROJECT_DIR$/07_SpringEnv/pom.xml" />
+        <option value="$PROJECT_DIR$/08_Spring_Web_MVC/pom.xml" />
       </list>
     </option>
   </component>
